@@ -8,16 +8,16 @@ const removeBlockups = () => {
 		el.parentNode.removeChild(el);
 	  }
 	});
-};
-
-const enableScrolling = () => {
+  };
+  
+  const enableScrolling = () => {
 	document.body.style.overflow = "auto";
 	document.documentElement.style.overflow = "auto";
-};
-
-window.requestAnimationFrame(() => {
+  };
+  
+  window.requestAnimationFrame(() => {
 	setTimeout(() => {
 	  removeBlockups();
 	  enableScrolling();
-	}, 5);
-});
+	}, 0);
+  });
